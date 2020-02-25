@@ -1,0 +1,7 @@
+cas casauto sessopts=(caslib="casuser"); 
+
+proc casutil outcaslib="casuser";
+ 
+load data=sashelp.orsales casout="sales;
+save casdata="sales" casout="sales.xlsx"; 
+run;
